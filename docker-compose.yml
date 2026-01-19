@@ -1,0 +1,51 @@
+version: '3.8'
+
+services:
+  db:
+    image: postgres:18-alpine
+    container_name: postgres-game-db
+    environment:
+      POSTGRES_DB: GameDb
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: 12345
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    restart: unless-stopped
+
+  meta-server:
+    build: .
+    ports:
+      - "7006:7006"
+    container_name: meta-server-towergame
+    depends_on:
+      db:
+        condition: service_healthy
+    environment:
+      DB_HOST: db
+      DB_PORT: 5432
+      DB_NAME: GameDb
+      DB_USER: postgres
+      DB_PASSWORD: 12345
+      
+      JWT_SECRET: Fvbyjhaibyzahukthklibiislz_574keyKK
+      
+      ADMIN_NAME: ADMINE666
+      ADMIN_EMAIL: adminP666@gmail.com
+      ADMIN_PASSWORD: Tower666
+      
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_URLS: http://+:7006
+      
+    volumes:
+      - ./logs:/app/logs
+    restart: unless-stopped
+
+volumes:
+  postgres_data:
