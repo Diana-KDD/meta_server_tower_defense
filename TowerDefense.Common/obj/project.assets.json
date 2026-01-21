@@ -851,11 +851,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\progect\\TowerDefenseGame\\TowerDefense.Server\\TowerDefense.Common\\TowerDefense.Common.csproj",
+      "projectUniqueName": "E:\\progect\\meta_server_tower_defense\\TowerDefense.Common\\TowerDefense.Common.csproj",
       "projectName": "TowerDefense.Common",
-      "projectPath": "E:\\progect\\TowerDefenseGame\\TowerDefense.Server\\TowerDefense.Common\\TowerDefense.Common.csproj",
+      "projectPath": "E:\\progect\\meta_server_tower_defense\\TowerDefense.Common\\TowerDefense.Common.csproj",
       "packagesPath": "C:\\Users\\Пользователь\\.nuget\\packages\\",
-      "outputPath": "E:\\progect\\TowerDefenseGame\\TowerDefense.Server\\TowerDefense.Common\\obj\\",
+      "outputPath": "E:\\progect\\meta_server_tower_defense\\TowerDefense.Common\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

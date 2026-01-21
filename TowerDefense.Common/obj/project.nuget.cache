@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "n3FAeH5Uglg=",
+  "dgSpecHash": "SgxB/ldmZyM=",
   "success": true,
-  "projectFilePath": "E:\\progect\\TowerDefenseGame\\TowerDefense.Server\\TowerDefense.Common\\TowerDefense.Common.csproj",
+  "projectFilePath": "E:\\progect\\meta_server_tower_defense\\TowerDefense.Common\\TowerDefense.Common.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Пользователь\\.nuget\\packages\\microsoft.entityframeworkcore\\9.0.1\\microsoft.entityframeworkcore.9.0.1.nupkg.sha512",
     "C:\\Users\\Пользователь\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\9.0.1\\microsoft.entityframeworkcore.abstractions.9.0.1.nupkg.sha512",

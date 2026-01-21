@@ -23,3 +23,16 @@ E:\progect\TowerDefenseGame\TowerDefense.Server\TowerDefense.Common\obj\Debug\ne
 E:\progect\TowerDefenseGame\TowerDefense.Server\TowerDefense.Common\obj\Debug\net8.0\refint\TowerDefense.Common.dll
 E:\progect\TowerDefenseGame\TowerDefense.Server\TowerDefense.Common\obj\Debug\net8.0\TowerDefense.Common.pdb
 E:\progect\TowerDefenseGame\TowerDefense.Server\TowerDefense.Common\obj\Debug\net8.0\ref\TowerDefense.Common.dll
+E:\progect\meta_server_tower_defense\TowerDefense.Common\bin\Debug\net8.0\TowerDefense.Common.deps.json
+E:\progect\meta_server_tower_defense\TowerDefense.Common\bin\Debug\net8.0\TowerDefense.Common.dll
+E:\progect\meta_server_tower_defense\TowerDefense.Common\bin\Debug\net8.0\TowerDefense.Common.pdb
+E:\progect\meta_server_tower_defense\TowerDefense.Common\obj\Debug\net8.0\TowerDefense.Common.csproj.AssemblyReference.cache
+E:\progect\meta_server_tower_defense\TowerDefense.Common\obj\Debug\net8.0\TowerDefense.Common.GeneratedMSBuildEditorConfig.editorconfig
+E:\progect\meta_server_tower_defense\TowerDefense.Common\obj\Debug\net8.0\TowerDefense.Common.AssemblyInfoInputs.cache
+E:\progect\meta_server_tower_defense\TowerDefense.Common\obj\Debug\net8.0\TowerDefense.Common.AssemblyInfo.cs
+E:\progect\meta_server_tower_defense\TowerDefense.Common\obj\Debug\net8.0\TowerDefense.Common.csproj.CoreCompileInputs.cache
+E:\progect\meta_server_tower_defense\TowerDefense.Common\obj\Debug\net8.0\TowerDefense.Common.sourcelink.json
+E:\progect\meta_server_tower_defense\TowerDefense.Common\obj\Debug\net8.0\TowerDefense.Common.dll
+E:\progect\meta_server_tower_defense\TowerDefense.Common\obj\Debug\net8.0\refint\TowerDefense.Common.dll
+E:\progect\meta_server_tower_defense\TowerDefense.Common\obj\Debug\net8.0\TowerDefense.Common.pdb
+E:\progect\meta_server_tower_defense\TowerDefense.Common\obj\Debug\net8.0\ref\TowerDefense.Common.dll

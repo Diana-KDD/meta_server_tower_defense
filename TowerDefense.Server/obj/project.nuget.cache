@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "mXbd6Ld3xNE=",
+  "dgSpecHash": "mPHvZHoZlf4=",
   "success": true,
-  "projectFilePath": "E:\\progect\\TowerDefenseGame\\TowerDefense.Server\\TowerDefense.Server\\TowerDefense.Server.csproj",
+  "projectFilePath": "E:\\progect\\meta_server_tower_defense\\TowerDefense.Server\\TowerDefense.Server.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Пользователь\\.nuget\\packages\\bcrypt.net-next\\4.0.3\\bcrypt.net-next.4.0.3.nupkg.sha512",
     "C:\\Users\\Пользователь\\.nuget\\packages\\dotnetenv\\3.0.0\\dotnetenv.3.0.0.nupkg.sha512",

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TowerDefense.Common")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+76dc8955441e50920baa14baca4e5e90dd5e39f3")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4508965a392b17bd0ca47f7b26ce55e5fbfbecc3")]
 [assembly: System.Reflection.AssemblyProductAttribute("TowerDefense.Common")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TowerDefense.Common")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

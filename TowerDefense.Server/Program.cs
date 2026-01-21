@@ -177,7 +177,22 @@ async Task ApplyMigrationsWithRetry(WebApplication app)
             }
             else
             {
-                logger.LogInformation("Все миграции уже применены");
+                var hasMigrations = await dbContext
+                            .Database
+                            .ExecuteSqlRawAsync(
+                                "SELECT 1 FROM \"__EFMigrationsHistory\" LIMIT 1"
+                            ) > 0;
+
+                if (!hasMigrations)
+                {
+                    logger.LogInformation("Таблица миграций пуста. Принудительно применяем все миграции.");
+                    await dbContext.Database.MigrateAsync();
+                    logger.LogInformation("Все миграции успешно применены");
+                }
+                else
+                {
+                    logger.LogInformation("Все миграции уже применены");
+                }
             }
 
             //-- Checking the current migration
