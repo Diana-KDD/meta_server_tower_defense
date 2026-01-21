@@ -42,7 +42,6 @@ namespace TowerDefense.Server.Controllers
                 Email = player.Email,
                 Level = profilePlayer.Level,
                 Experience = profilePlayer.Experience,
-                Rating = profilePlayer.Rating
             });
         }
 

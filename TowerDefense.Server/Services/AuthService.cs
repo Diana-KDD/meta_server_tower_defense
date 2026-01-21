@@ -91,12 +91,7 @@ namespace TowerDefense.Server.Services
                 await _context.Players.AddAsync(player);
                 await _context.SaveChangesAsync();
 
-                var playerProfile = new PlayerProfile
-                {
-                    IdPlayer = player.Id
-                };
-
-                await _context.PlayerProfiles.AddAsync(playerProfile);
+                await _context.PlayerProfiles.AddAsync(new PlayerProfile { IdPlayer = player.Id});
                 await _context.PlayerStatistics.AddAsync(new PlayerStatistic { IdPlayer = player.Id });
                 await _context.PlayerRoles.AddAsync(new PlayerRole
                 {
@@ -105,7 +100,7 @@ namespace TowerDefense.Server.Services
                 });
                 await _context.SaveChangesAsync();
 
-                var token = _jwtTokenService.GenerateJwtToken(player, playerProfile);
+                var token = _jwtTokenService.GenerateJwtToken(player);
 
                 _logger.LogInformation("New player registered: {Username} (ID: {Id})", player.Username, player.Id);
 
@@ -113,7 +108,7 @@ namespace TowerDefense.Server.Services
                 {
                     Success = true,
                     Message = "Регистрация успешна",
-                    Token = token,
+                    Token = token.Result,
                     RefreshToken = refreshToken,
                     TokenExpiry = DateTime.UtcNow.AddHours(_configuration.GetValue<int>("JwtConfig:ExpirationInHours", 1)),
                     Player = MapToPlayerInfo(player)
@@ -195,9 +190,7 @@ namespace TowerDefense.Server.Services
                 player.LoginCount++;
                 player.UpdatedAt = DateTime.UtcNow;
 
-                var playerProfile = await _context.PlayerProfiles.FirstOrDefaultAsync(pp => pp.IdPlayer == player.Id);
-
-                var token = _jwtTokenService.GenerateJwtToken(player, playerProfile!);
+                var token = _jwtTokenService.GenerateJwtToken(player);
                 var refreshToken = _jwtTokenService.GenerateRefreshToken();
 
                 player.RefreshToken = refreshToken;
@@ -211,7 +204,7 @@ namespace TowerDefense.Server.Services
                 {
                     Success = true,
                     Message = "Вход выполнен успешно",
-                    Token = token,
+                    Token = token.Result,
                     RefreshToken = refreshToken,
                     TokenExpiry = DateTime.UtcNow.AddHours(_configuration.GetValue<int>("JwtConfig:ExpirationInHours", 1)),
                     Player = MapToPlayerInfo(player)
@@ -286,9 +279,7 @@ namespace TowerDefense.Server.Services
                     };
                 }
 
-                var playerProfile = await _context.PlayerProfiles.FindAsync(playerId);
-
-                var newToken = _jwtTokenService.GenerateJwtToken(player, playerProfile);
+                var newToken = _jwtTokenService.GenerateJwtToken(player);
                 var newRefreshToken = _jwtTokenService.GenerateRefreshToken();
 
                 player.RefreshToken = newRefreshToken;
@@ -303,7 +294,7 @@ namespace TowerDefense.Server.Services
                 {
                     Success = true,
                     Message = "Токен обновлен",
-                    Token = newToken,
+                    Token = newToken.Result,
                     RefreshToken = newRefreshToken,
                     TokenExpiry = DateTime.UtcNow.AddHours(_configuration.GetValue<int>("JwtConfig:ExpirationInHours", 1)),
                     Player = MapToPlayerInfo(player)

@@ -11,7 +11,7 @@ namespace TowerDefense.Common.Models.Player
         public int TotalMatches { get; set; } = 0;
         public int Wins { get; set; } = 0;
         public int Losses { get; set; } = 0;
-        public int MaxRating { get; set; } = 1000;
+        public int Rating { get; set; } = 1000;
 
 
         //---------

@@ -64,4 +64,24 @@ namespace TowerDefense.Common.Models.DTO
         public string RefreshToken { get; set; }
     }
 
+    public class ResultMatchInfo
+    {
+        [Required]
+        public int IdPlayer_1 {  get; set; }
+        [Required]
+        public int IdPlayer_2 {  get; set; }
+        [Required]
+        public int IdPlayer_winner { get; set; }
+    }
+
+    public class LeaderboardInfo
+    {
+        [Required]
+        public string Username { get; set; }
+        public int Rating { get; set; }
+        public int TotalMatches { get; set; }
+        public int Wins { get; set; }
+        public int Losses { get; set; }
+    }
+
 }

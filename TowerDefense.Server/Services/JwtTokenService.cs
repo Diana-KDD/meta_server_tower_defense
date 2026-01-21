@@ -3,6 +3,7 @@ using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Security.Cryptography;
 using System.Text;
+using System.Threading.Tasks;
 using TowerDefense.Common.Models.Player;
 using TowerDefense.Server.Data;
 
@@ -11,7 +12,7 @@ namespace TowerDefense.Server.Services
     public interface IJwtTokenService
     {
         string GenerateRefreshToken();
-        string GenerateJwtToken(Player player, PlayerProfile playerProfile);
+        Task<string> GenerateJwtToken(Player player);
         JwtSecurityToken ValidateTokenWithoutLifetime(string token);
     }
     public class JwtTokenService: IJwtTokenService
@@ -47,7 +48,7 @@ namespace TowerDefense.Server.Services
                 .Replace('+', '-').Replace('/', '_').Replace("=", "");
         }
 
-        public string GenerateJwtToken(Player player, PlayerProfile playerProfile)
+        public async Task<string> GenerateJwtToken(Player player)
         {
             var securityKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(Environment.GetEnvironmentVariable("JWT_SECRET")!));
 
@@ -62,14 +63,15 @@ namespace TowerDefense.Server.Services
                     playersRoles += ", ";
                 }
             }
-
+            var playerStatistic = await _context.PlayerStatistics.FindAsync(player.Id);
+            var playerProfile = await _context.PlayerProfiles.FindAsync(player.Id);
             var claims = new[]
             {
                 new Claim(ClaimTypes.NameIdentifier, player.Id.ToString()),
                 new Claim(ClaimTypes.Name, player.Username),
                 new Claim(ClaimTypes.Email, player.Email),
-                new Claim("rating", playerProfile.Rating.ToString()),
-                new Claim("level", playerProfile.Level.ToString()),
+                new Claim("rating", playerStatistic!.Rating.ToString()),
+                new Claim("level", playerProfile!.Level.ToString()),
                 new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString()),
                 new Claim(ClaimTypes.Role, playersRoles),
                 new Claim(JwtRegisteredClaimNames.Iat, DateTimeOffset.UtcNow.ToUnixTimeSeconds().ToString())
