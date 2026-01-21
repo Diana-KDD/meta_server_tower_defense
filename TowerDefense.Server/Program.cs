@@ -161,24 +161,9 @@ async Task ApplyMigrationsWithRetry(WebApplication app)
             logger.LogInformation("Подключение к БД установлено");
 
             //-- Checking migrations
-            var pendingMigrations = await dbContext.Database.GetPendingMigrationsAsync();
-
-            if (pendingMigrations.Any())
-            {
-                logger.LogInformation($"Найдено {pendingMigrations.Count()} непримененных миграций:");
-                foreach (var migration in pendingMigrations)
-                {
-                    logger.LogInformation($"\t- {migration}");
-                }
-
-                //-- Applying migrations
-                await dbContext.Database.MigrateAsync();
-                logger.LogInformation("Все миграции успешно применены");
-            }
-            else
-            {
-                logger.LogInformation("Все миграции уже применены");
-            }
+            //-- Applying migrations
+            await dbContext.Database.MigrateAsync();
+            logger.LogInformation("Все миграции успешно применены");
 
             //-- Checking the current migration
             var appliedMigrations = await dbContext.Database.GetAppliedMigrationsAsync();
