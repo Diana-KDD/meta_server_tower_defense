@@ -3,29 +3,24 @@ using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Security.Cryptography;
 using System.Text;
-using System.Threading.Tasks;
-using TowerDefense.Common.Models.Player;
-using TowerDefense.Server.Data;
+using TowerDefense.Common.Models.DTO;
 
 namespace TowerDefense.Server.Services
 {
     public interface IJwtTokenService
     {
         string GenerateRefreshToken();
-        Task<string> GenerateJwtToken(Player player);
+        Task<string> GenerateJwtToken(PlayerInfoClaim playerInfoClaim);
         JwtSecurityToken ValidateTokenWithoutLifetime(string token);
     }
     public class JwtTokenService: IJwtTokenService
     {
         public readonly TokenValidationParameters _tokenValidationParameters;
         private readonly IConfiguration _configuration;
-        private readonly GameDBContext _context;
 
-        public JwtTokenService(IConfiguration configuration, GameDBContext context)
+        public JwtTokenService(IConfiguration configuration)
         {
             _configuration = configuration;
-            _context = context;
-
             var key = Encoding.UTF8.GetBytes(Environment.GetEnvironmentVariable("JWT_SECRET")!);
             _tokenValidationParameters = new TokenValidationParameters
             {
@@ -48,34 +43,31 @@ namespace TowerDefense.Server.Services
                 .Replace('+', '-').Replace('/', '_').Replace("=", "");
         }
 
-        public async Task<string> GenerateJwtToken(Player player)
+        public async Task<string> GenerateJwtToken(PlayerInfoClaim playerInfoClaim)
         {
             var securityKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(Environment.GetEnvironmentVariable("JWT_SECRET")!));
-
-            string playersRoles = "";
-            List<int> idRolesList = _context.PlayerRoles
-                .Where(pr => pr.PlayerId == player.Id).Select(pr => pr.RoleId).ToList();
-            for(int i = 0; i < idRolesList.Count; i++)
+            var claims = new List<Claim>
             {
-                playersRoles += _context.Roles.FirstOrDefault(r => r.Id == idRolesList[i])!.RoleName;
-                if(i < idRolesList.Count - 1)
-                {
-                    playersRoles += ", ";
-                }
-            }
-            var playerStatistic = await _context.PlayerStatistics.FindAsync(player.Id);
-            var playerProfile = await _context.PlayerProfiles.FindAsync(player.Id);
-            var claims = new[]
-            {
-                new Claim(ClaimTypes.NameIdentifier, player.Id.ToString()),
-                new Claim(ClaimTypes.Name, player.Username),
-                new Claim(ClaimTypes.Email, player.Email),
-                new Claim("rating", playerStatistic!.Rating.ToString()),
-                new Claim("level", playerProfile!.Level.ToString()),
+                new Claim(ClaimTypes.NameIdentifier, playerInfoClaim.Id.ToString()),
+                new Claim(ClaimTypes.Name, playerInfoClaim.Username),
+                new Claim(ClaimTypes.Email, playerInfoClaim.Email),
+                new Claim("Level", playerInfoClaim.Level.ToString()),
+                new Claim("Experience", playerInfoClaim.Experience.ToString()),
+                new Claim("Totalmatches", playerInfoClaim.TotalMatches.ToString()),
+                new Claim("Wins", playerInfoClaim.Wins.ToString()),
+                new Claim("Rating", playerInfoClaim.Rating.ToString()),
                 new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString()),
-                new Claim(ClaimTypes.Role, playersRoles),
                 new Claim(JwtRegisteredClaimNames.Iat, DateTimeOffset.UtcNow.ToUnixTimeSeconds().ToString())
             };
+
+            foreach(var nameRole in playerInfoClaim.Roles)
+            {
+                claims.Add(new Claim(ClaimTypes.Role, nameRole));
+            }
+            foreach (var namePermission in playerInfoClaim.Permissions)
+            {
+                claims.Add(new Claim("Permission", namePermission));
+            }
 
             var experationHours = _configuration.GetValue<int>("JwtConfig:ExpirationInHour", 1);
 

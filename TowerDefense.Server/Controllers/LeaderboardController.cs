@@ -28,6 +28,7 @@ namespace TowerDefense.Server.Controllers
             {
                 return BadRequest(new
                 {
+                    Success = false,
                     Message = "Ошибка получения статистик игроков"
                 });
             }

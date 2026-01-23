@@ -77,7 +77,7 @@ namespace TowerDefense.Server.Services
         {
             var UserName = Environment.GetEnvironmentVariable("ADMIN_NAME");
             var Email = Environment.GetEnvironmentVariable("ADMIN_EMAIL");
-            var Role = _configuration["Admin:DefaultRole"];
+            List<string> RoleList = new List<string>() { _configuration["Admin:DefaultRole"], "Player" };
             var Password = Environment.GetEnvironmentVariable("ADMIN_PASSWORD");
 
             if(string.IsNullOrEmpty(UserName) && string.IsNullOrEmpty(Email))
@@ -110,20 +110,23 @@ namespace TowerDefense.Server.Services
             await _context.PlayerProfiles.AddAsync(new PlayerProfile { IdPlayer = player.Id });
             await _context.PlayerStatistics.AddAsync(new PlayerStatistic { IdPlayer = player.Id });
             
-            var adminRole = await _context.Roles
+            foreach(var Role in RoleList)
+            {
+                var adminRole = await _context.Roles
                             .FirstOrDefaultAsync(r => r.RoleName == Role);
 
-            if (adminRole == null)
-            {
-                Console.WriteLine($"Role '{Role}' not found!");
-                return;
-            }
+                if (adminRole == null)
+                {
+                    Console.WriteLine($"Role '{Role}' not found!");
+                    return;
+                }
 
-            await _context.PlayerRoles.AddAsync(new PlayerRole
-            {
-                PlayerId = player.Id,
-                RoleId = adminRole.Id
-            });
+                await _context.PlayerRoles.AddAsync(new PlayerRole
+                {
+                    PlayerId = player.Id,
+                    RoleId = adminRole.Id
+                });
+            }
             await _context.SaveChangesAsync();
         }
     }

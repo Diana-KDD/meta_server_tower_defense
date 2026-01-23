@@ -27,7 +27,7 @@ namespace TowerDefense.Server.Controllers
             {
                 return BadRequest(new
                 {
-                    succes = false,
+                    Success = false,
                     errors = ModelState.Values
                             .SelectMany(v=>v.Errors)
                             .Select(e=>e.ErrorMessage)
@@ -49,7 +49,7 @@ namespace TowerDefense.Server.Controllers
             {
                 return BadRequest(new
                 {
-                    succes = false,
+                    Success = false,
                     errors = ModelState.Values
                     .SelectMany(v => v.Errors)
                     .Select(e => e.ErrorMessage)

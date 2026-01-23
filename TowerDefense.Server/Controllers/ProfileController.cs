@@ -1,12 +1,7 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.IdentityModel.Tokens;
-using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
-using System.Text;
-using TowerDefense.Common.Models.DTO;
 using TowerDefense.Server.Data;
-using TowerDefense.Server.Services;
 
 namespace TowerDefense.Server.Controllers
 {
@@ -29,12 +24,19 @@ namespace TowerDefense.Server.Controllers
             var userIdClaim = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
             if(!int.TryParse(userIdClaim, out int userId))
             {
-                return NotFound($"Пользователь не найден {userId}");
+                return NotFound($"Пользователь не найден {userIdClaim}");
             }
 
             var player = await _context.Players.FindAsync(userId);
             var profilePlayer = await _context.PlayerProfiles.FindAsync(userId);
+
+            if(player == null|| profilePlayer == null)
+            {
+                return NotFound($"Пользователь не найден {userId}");
+            }
+
             _logger.LogInformation($"User: {userId} get profile");
+
             return Ok(new
             {
                 UserName = player.Username,
@@ -44,18 +46,5 @@ namespace TowerDefense.Server.Controllers
                 Experience = profilePlayer.Experience,
             });
         }
-
-        //[HttpGet("debug")]
-        //public IActionResult DebugClaims()
-        //{
-        //    var claims = User.Claims.Select(c => new
-        //    {
-        //        Type = c.Type,
-        //        Value = c.Value,
-        //        ValueType = c.ValueType
-        //    }).ToList();
-
-        //    return Ok(claims);
-        //}
     }
 }

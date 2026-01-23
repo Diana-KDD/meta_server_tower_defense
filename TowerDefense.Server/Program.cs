@@ -87,7 +87,12 @@ builder.Services.AddAuthentication(options =>
     };
 });
 
-builder.Services.AddAuthorization();
+builder.Services.AddAuthorization(option =>
+{
+    option.AddPolicy("AdminCreate", policy =>
+    policy.RequireRole("Admin")
+    .RequireClaim("Permission", "Create"));
+});
 
 var app = builder.Build();
 

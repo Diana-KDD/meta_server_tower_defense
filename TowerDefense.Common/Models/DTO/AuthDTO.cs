@@ -58,6 +58,20 @@ namespace TowerDefense.Common.Models.DTO
         public DateTime LastLogin { get; set; }
     }
 
+    public class PlayerInfoClaim
+    {
+        public int Id { get; set; }
+        public string Username { get; set; } = null!;
+        public string Email { get; set; } = null!;
+        public int Level { get; set; }
+        public int Experience { get; set; }
+        public int TotalMatches { get; set; }
+        public int Wins { get; set; }
+        public int Rating { get; set; }
+        public List<string> Roles { get; set; }
+        public List<string> Permissions { get; set; }
+    }
+
     public class RefreshTokenRequest
     {
         public string Token { get; set; }
@@ -82,6 +96,18 @@ namespace TowerDefense.Common.Models.DTO
         public int TotalMatches { get; set; }
         public int Wins { get; set; }
         public int Losses { get; set; }
+    }
+
+    public class TowerInfo
+    {
+        public string TowerName { get; set; } = null!;
+        public string Description {  get; set; } = null!;
+    }
+
+    public class TowerAddInInventory
+    {
+        public int IdTower { get; set; }
+        public int Quantity { get; set; }
     }
 
 }

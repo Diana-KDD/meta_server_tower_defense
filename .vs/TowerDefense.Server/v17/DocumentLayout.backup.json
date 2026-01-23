@@ -3,20 +3,98 @@
   "WorkspaceRootPath": "E:\\progect\\meta_server_tower_defense\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{3AC22745-2D28-4B1B-9CFE-8839B468A466}|TowerDefense.Server\\TowerDefense.Server.csproj|e:\\progect\\meta_server_tower_defense\\towerdefense.server\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3AC22745-2D28-4B1B-9CFE-8839B468A466}|TowerDefense.Server\\TowerDefense.Server.csproj|solutionrelative:towerdefense.server\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{3AC22745-2D28-4B1B-9CFE-8839B468A466}|TowerDefense.Server\\TowerDefense.Server.csproj|e:\\progect\\meta_server_tower_defense\\towerdefense.server\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{3AC22745-2D28-4B1B-9CFE-8839B468A466}|TowerDefense.Server\\TowerDefense.Server.csproj|solutionrelative:towerdefense.server\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3AC22745-2D28-4B1B-9CFE-8839B468A466}|TowerDefense.Server\\TowerDefense.Server.csproj|e:\\progect\\meta_server_tower_defense\\towerdefense.server\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3AC22745-2D28-4B1B-9CFE-8839B468A466}|TowerDefense.Server\\TowerDefense.Server.csproj|solutionrelative:towerdefense.server\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3AC22745-2D28-4B1B-9CFE-8839B468A466}|TowerDefense.Server\\TowerDefense.Server.csproj|e:\\progect\\meta_server_tower_defense\\towerdefense.server\\.env||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{3AC22745-2D28-4B1B-9CFE-8839B468A466}|TowerDefense.Server\\TowerDefense.Server.csproj|solutionrelative:towerdefense.server\\.env||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3AC22745-2D28-4B1B-9CFE-8839B468A466}|TowerDefense.Server\\TowerDefense.Server.csproj|e:\\progect\\meta_server_tower_defense\\towerdefense.server\\controllers\\towercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3AC22745-2D28-4B1B-9CFE-8839B468A466}|TowerDefense.Server\\TowerDefense.Server.csproj|solutionrelative:towerdefense.server\\controllers\\towercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3AC22745-2D28-4B1B-9CFE-8839B468A466}|TowerDefense.Server\\TowerDefense.Server.csproj|e:\\progect\\meta_server_tower_defense\\towerdefense.server\\controllers\\inventorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3AC22745-2D28-4B1B-9CFE-8839B468A466}|TowerDefense.Server\\TowerDefense.Server.csproj|solutionrelative:towerdefense.server\\controllers\\inventorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3AC22745-2D28-4B1B-9CFE-8839B468A466}|TowerDefense.Server\\TowerDefense.Server.csproj|e:\\progect\\meta_server_tower_defense\\towerdefense.server\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3AC22745-2D28-4B1B-9CFE-8839B468A466}|TowerDefense.Server\\TowerDefense.Server.csproj|solutionrelative:towerdefense.server\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3AC22745-2D28-4B1B-9CFE-8839B468A466}|TowerDefense.Server\\TowerDefense.Server.csproj|e:\\progect\\meta_server_tower_defense\\towerdefense.server\\controllers\\matchcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3AC22745-2D28-4B1B-9CFE-8839B468A466}|TowerDefense.Server\\TowerDefense.Server.csproj|solutionrelative:towerdefense.server\\controllers\\matchcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6289349C-7173-4865-B539-2FD48B76E4A5}|TowerDefense.Common\\TowerDefense.Common.csproj|e:\\progect\\meta_server_tower_defense\\towerdefense.common\\models\\dto\\authdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6289349C-7173-4865-B539-2FD48B76E4A5}|TowerDefense.Common\\TowerDefense.Common.csproj|solutionrelative:towerdefense.common\\models\\dto\\authdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6289349C-7173-4865-B539-2FD48B76E4A5}|TowerDefense.Common\\TowerDefense.Common.csproj|e:\\progect\\meta_server_tower_defense\\towerdefense.common\\models\\player\\inventory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6289349C-7173-4865-B539-2FD48B76E4A5}|TowerDefense.Common\\TowerDefense.Common.csproj|solutionrelative:towerdefense.common\\models\\player\\inventory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6289349C-7173-4865-B539-2FD48B76E4A5}|TowerDefense.Common\\TowerDefense.Common.csproj|e:\\progect\\meta_server_tower_defense\\towerdefense.common\\models\\tower\\ttower.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6289349C-7173-4865-B539-2FD48B76E4A5}|TowerDefense.Common\\TowerDefense.Common.csproj|solutionrelative:towerdefense.common\\models\\tower\\ttower.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3AC22745-2D28-4B1B-9CFE-8839B468A466}|TowerDefense.Server\\TowerDefense.Server.csproj|e:\\progect\\meta_server_tower_defense\\towerdefense.server\\controllers\\leaderboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3AC22745-2D28-4B1B-9CFE-8839B468A466}|TowerDefense.Server\\TowerDefense.Server.csproj|solutionrelative:towerdefense.server\\controllers\\leaderboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3AC22745-2D28-4B1B-9CFE-8839B468A466}|TowerDefense.Server\\TowerDefense.Server.csproj|e:\\progect\\meta_server_tower_defense\\towerdefense.server\\controllers\\profilecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3AC22745-2D28-4B1B-9CFE-8839B468A466}|TowerDefense.Server\\TowerDefense.Server.csproj|solutionrelative:towerdefense.server\\controllers\\profilecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3AC22745-2D28-4B1B-9CFE-8839B468A466}|TowerDefense.Server\\TowerDefense.Server.csproj|e:\\progect\\meta_server_tower_defense\\towerdefense.server\\services\\authorizationseedservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3AC22745-2D28-4B1B-9CFE-8839B468A466}|TowerDefense.Server\\TowerDefense.Server.csproj|solutionrelative:towerdefense.server\\services\\authorizationseedservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3AC22745-2D28-4B1B-9CFE-8839B468A466}|TowerDefense.Server\\TowerDefense.Server.csproj|e:\\progect\\meta_server_tower_defense\\towerdefense.server\\services\\jwttokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3AC22745-2D28-4B1B-9CFE-8839B468A466}|TowerDefense.Server\\TowerDefense.Server.csproj|solutionrelative:towerdefense.server\\services\\jwttokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3AC22745-2D28-4B1B-9CFE-8839B468A466}|TowerDefense.Server\\TowerDefense.Server.csproj|e:\\progect\\meta_server_tower_defense\\towerdefense.server\\authorizationoptions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3AC22745-2D28-4B1B-9CFE-8839B468A466}|TowerDefense.Server\\TowerDefense.Server.csproj|solutionrelative:towerdefense.server\\authorizationoptions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3AC22745-2D28-4B1B-9CFE-8839B468A466}|TowerDefense.Server\\TowerDefense.Server.csproj|e:\\progect\\meta_server_tower_defense\\towerdefense.server\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3AC22745-2D28-4B1B-9CFE-8839B468A466}|TowerDefense.Server\\TowerDefense.Server.csproj|solutionrelative:towerdefense.server\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6289349C-7173-4865-B539-2FD48B76E4A5}|TowerDefense.Common\\TowerDefense.Common.csproj|e:\\progect\\meta_server_tower_defense\\towerdefense.common\\models\\access\\rolepermission.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6289349C-7173-4865-B539-2FD48B76E4A5}|TowerDefense.Common\\TowerDefense.Common.csproj|solutionrelative:towerdefense.common\\models\\access\\rolepermission.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6289349C-7173-4865-B539-2FD48B76E4A5}|TowerDefense.Common\\TowerDefense.Common.csproj|e:\\progect\\meta_server_tower_defense\\towerdefense.common\\models\\player\\playerstatistic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6289349C-7173-4865-B539-2FD48B76E4A5}|TowerDefense.Common\\TowerDefense.Common.csproj|solutionrelative:towerdefense.common\\models\\player\\playerstatistic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6289349C-7173-4865-B539-2FD48B76E4A5}|TowerDefense.Common\\TowerDefense.Common.csproj|e:\\progect\\meta_server_tower_defense\\towerdefense.common\\models\\player\\playerprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6289349C-7173-4865-B539-2FD48B76E4A5}|TowerDefense.Common\\TowerDefense.Common.csproj|solutionrelative:towerdefense.common\\models\\player\\playerprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\progect\\TowerDefenseGame\\TowerDefense.Server\\TowerDefense.Server\\Migrations\\20260122160721_AddTable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\progect\\TowerDefenseGame\\TowerDefense.Server\\TowerDefense.Server\\Migrations\\20260122150108_addTableDb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{754FC069-D67B-A9D7-50A1-8D1CA196D8F1}|\u042D\u043B\u0435\u043C\u0435\u043D\u0442\u044B \u0440\u0435\u0448\u0435\u043D\u0438\u044F{754FC069-D67B-A9D7-50A1-8D1CA196D8F1}|E:\\progect\\meta_server_tower_defense\\Dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{754FC069-D67B-A9D7-50A1-8D1CA196D8F1}|\u042D\u043B\u0435\u043C\u0435\u043D\u0442\u044B \u0440\u0435\u0448\u0435\u043D\u0438\u044F{754FC069-D67B-A9D7-50A1-8D1CA196D8F1}|solutionrelative:Dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{754FC069-D67B-A9D7-50A1-8D1CA196D8F1}|\u042D\u043B\u0435\u043C\u0435\u043D\u0442\u044B \u0440\u0435\u0448\u0435\u043D\u0438\u044F{754FC069-D67B-A9D7-50A1-8D1CA196D8F1}|E:\\progect\\meta_server_tower_defense\\docker-compose.yml||{8B382828-6202-11D1-8870-0000F87579D2}",
       "RelativeMoniker": "D:0:0:{754FC069-D67B-A9D7-50A1-8D1CA196D8F1}|\u042D\u043B\u0435\u043C\u0435\u043D\u0442\u044B \u0440\u0435\u0448\u0435\u043D\u0438\u044F{754FC069-D67B-A9D7-50A1-8D1CA196D8F1}|solutionrelative:docker-compose.yml||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{754FC069-D67B-A9D7-50A1-8D1CA196D8F1}|\u042D\u043B\u0435\u043C\u0435\u043D\u0442\u044B \u0440\u0435\u0448\u0435\u043D\u0438\u044F{754FC069-D67B-A9D7-50A1-8D1CA196D8F1}|E:\\progect\\meta_server_tower_defense\\Dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{754FC069-D67B-A9D7-50A1-8D1CA196D8F1}|\u042D\u043B\u0435\u043C\u0435\u043D\u0442\u044B \u0440\u0435\u0448\u0435\u043D\u0438\u044F{754FC069-D67B-A9D7-50A1-8D1CA196D8F1}|solutionrelative:Dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}"
+      "AbsoluteMoniker": "D:0:0:{3AC22745-2D28-4B1B-9CFE-8839B468A466}|TowerDefense.Server\\TowerDefense.Server.csproj|e:\\progect\\meta_server_tower_defense\\towerdefense.server\\migrations\\20260122200611_addtable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3AC22745-2D28-4B1B-9CFE-8839B468A466}|TowerDefense.Server\\TowerDefense.Server.csproj|solutionrelative:towerdefense.server\\migrations\\20260122200611_addtable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,7 +104,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Bookmark",
@@ -46,53 +124,295 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "appsettings.Development.json",
-              "DocumentMoniker": "E:\\progect\\meta_server_tower_defense\\TowerDefense.Server\\appsettings.Development.json",
-              "RelativeDocumentMoniker": "TowerDefense.Server\\appsettings.Development.json",
-              "ToolTip": "E:\\progect\\meta_server_tower_defense\\TowerDefense.Server\\appsettings.Development.json",
-              "RelativeToolTip": "TowerDefense.Server\\appsettings.Development.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-01-21T16:50:25.809Z",
+              "DocumentIndex": 5,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "E:\\progect\\meta_server_tower_defense\\TowerDefense.Server\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "TowerDefense.Server\\Controllers\\AuthController.cs",
+              "ToolTip": "E:\\progect\\meta_server_tower_defense\\TowerDefense.Server\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "TowerDefense.Server\\Controllers\\AuthController.cs",
+              "ViewState": "AgIAAEQAAAAAAAAAAAAwwF4AAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-22T15:04:59.446Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "AuthDTO.cs",
+              "DocumentMoniker": "E:\\progect\\meta_server_tower_defense\\TowerDefense.Common\\Models\\DTO\\AuthDTO.cs",
+              "RelativeDocumentMoniker": "TowerDefense.Common\\Models\\DTO\\AuthDTO.cs",
+              "ToolTip": "E:\\progect\\meta_server_tower_defense\\TowerDefense.Common\\Models\\DTO\\AuthDTO.cs",
+              "RelativeToolTip": "TowerDefense.Common\\Models\\DTO\\AuthDTO.cs",
+              "ViewState": "AgIAAFcAAAAAAAAAAAA5wGwAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-21T12:35:50.529Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "TowerController.cs",
+              "DocumentMoniker": "E:\\progect\\meta_server_tower_defense\\TowerDefense.Server\\Controllers\\TowerController.cs",
+              "RelativeDocumentMoniker": "TowerDefense.Server\\Controllers\\TowerController.cs",
+              "ToolTip": "E:\\progect\\meta_server_tower_defense\\TowerDefense.Server\\Controllers\\TowerController.cs",
+              "RelativeToolTip": "TowerDefense.Server\\Controllers\\TowerController.cs",
+              "ViewState": "AgIAADoAAAAAAAAAAAAowFAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-22T15:04:08.175Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 6,
+              "Title": "MatchController.cs",
+              "DocumentMoniker": "E:\\progect\\meta_server_tower_defense\\TowerDefense.Server\\Controllers\\MatchController.cs",
+              "RelativeDocumentMoniker": "TowerDefense.Server\\Controllers\\MatchController.cs",
+              "ToolTip": "E:\\progect\\meta_server_tower_defense\\TowerDefense.Server\\Controllers\\MatchController.cs",
+              "RelativeToolTip": "TowerDefense.Server\\Controllers\\MatchController.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABgAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-21T12:38:13.439Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "Program.cs",
               "DocumentMoniker": "E:\\progect\\meta_server_tower_defense\\TowerDefense.Server\\Program.cs",
               "RelativeDocumentMoniker": "TowerDefense.Server\\Program.cs",
               "ToolTip": "E:\\progect\\meta_server_tower_defense\\TowerDefense.Server\\Program.cs",
               "RelativeToolTip": "TowerDefense.Server\\Program.cs",
-              "ViewState": "AgIAAKoAAAAAAAAAAAAQwLcAAAAiAAAAAAAAAA==",
+              "ViewState": "AgIAAEQAAAAAAAAAAAAAAFsAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-21T16:22:04.061Z",
+              "WhenOpened": "2026-01-21T12:13:09.136Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "docker-compose.yml",
-              "DocumentMoniker": "E:\\progect\\meta_server_tower_defense\\docker-compose.yml",
-              "RelativeDocumentMoniker": "docker-compose.yml",
-              "ToolTip": "E:\\progect\\meta_server_tower_defense\\docker-compose.yml",
-              "RelativeToolTip": "docker-compose.yml",
-              "ViewState": "AgIAABUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003775|",
-              "WhenOpened": "2026-01-21T16:21:35.646Z"
+              "Title": ".env",
+              "DocumentMoniker": "E:\\progect\\meta_server_tower_defense\\TowerDefense.Server\\.env",
+              "RelativeDocumentMoniker": "TowerDefense.Server\\.env",
+              "ToolTip": "E:\\progect\\meta_server_tower_defense\\TowerDefense.Server\\.env",
+              "RelativeToolTip": "TowerDefense.Server\\.env",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2026-01-21T15:27:43.914Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
+              "Title": "appsettings.Development.json",
+              "DocumentMoniker": "E:\\progect\\meta_server_tower_defense\\TowerDefense.Server\\appsettings.Development.json",
+              "RelativeDocumentMoniker": "TowerDefense.Server\\appsettings.Development.json",
+              "ToolTip": "E:\\progect\\meta_server_tower_defense\\TowerDefense.Server\\appsettings.Development.json",
+              "RelativeToolTip": "TowerDefense.Server\\appsettings.Development.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-01-21T12:14:27.816Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "InventoryController.cs",
+              "DocumentMoniker": "E:\\progect\\meta_server_tower_defense\\TowerDefense.Server\\Controllers\\InventoryController.cs",
+              "RelativeDocumentMoniker": "TowerDefense.Server\\Controllers\\InventoryController.cs",
+              "ToolTip": "E:\\progect\\meta_server_tower_defense\\TowerDefense.Server\\Controllers\\InventoryController.cs",
+              "RelativeToolTip": "TowerDefense.Server\\Controllers\\InventoryController.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABYAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-22T15:03:18.528Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Inventory.cs",
+              "DocumentMoniker": "E:\\progect\\meta_server_tower_defense\\TowerDefense.Common\\Models\\Player\\Inventory.cs",
+              "RelativeDocumentMoniker": "TowerDefense.Common\\Models\\Player\\Inventory.cs",
+              "ToolTip": "E:\\progect\\meta_server_tower_defense\\TowerDefense.Common\\Models\\Player\\Inventory.cs",
+              "RelativeToolTip": "TowerDefense.Common\\Models\\Player\\Inventory.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-23T08:18:44.298Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Ttower.cs",
+              "DocumentMoniker": "E:\\progect\\meta_server_tower_defense\\TowerDefense.Common\\Models\\Tower\\Ttower.cs",
+              "RelativeDocumentMoniker": "TowerDefense.Common\\Models\\Tower\\Ttower.cs",
+              "ToolTip": "E:\\progect\\meta_server_tower_defense\\TowerDefense.Common\\Models\\Tower\\Ttower.cs",
+              "RelativeToolTip": "TowerDefense.Common\\Models\\Tower\\Ttower.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-23T07:36:42.02Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "LeaderboardController.cs",
+              "DocumentMoniker": "E:\\progect\\meta_server_tower_defense\\TowerDefense.Server\\Controllers\\LeaderboardController.cs",
+              "RelativeDocumentMoniker": "TowerDefense.Server\\Controllers\\LeaderboardController.cs",
+              "ToolTip": "E:\\progect\\meta_server_tower_defense\\TowerDefense.Server\\Controllers\\LeaderboardController.cs",
+              "RelativeToolTip": "TowerDefense.Server\\Controllers\\LeaderboardController.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAowDYAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-23T07:41:22.517Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "ProfileController.cs",
+              "DocumentMoniker": "E:\\progect\\meta_server_tower_defense\\TowerDefense.Server\\Controllers\\ProfileController.cs",
+              "RelativeDocumentMoniker": "TowerDefense.Server\\Controllers\\ProfileController.cs",
+              "ToolTip": "E:\\progect\\meta_server_tower_defense\\TowerDefense.Server\\Controllers\\ProfileController.cs",
+              "RelativeToolTip": "TowerDefense.Server\\Controllers\\ProfileController.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAgwB8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-23T07:34:52.831Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "AuthorizationSeedService.cs",
+              "DocumentMoniker": "E:\\progect\\meta_server_tower_defense\\TowerDefense.Server\\Services\\AuthorizationSeedService.cs",
+              "RelativeDocumentMoniker": "TowerDefense.Server\\Services\\AuthorizationSeedService.cs",
+              "ToolTip": "E:\\progect\\meta_server_tower_defense\\TowerDefense.Server\\Services\\AuthorizationSeedService.cs",
+              "RelativeToolTip": "TowerDefense.Server\\Services\\AuthorizationSeedService.cs",
+              "ViewState": "AgIAAHUAAAAAAAAAAAAuwHkAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-21T12:35:38.598Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "JwtTokenService.cs",
+              "DocumentMoniker": "E:\\progect\\meta_server_tower_defense\\TowerDefense.Server\\Services\\JwtTokenService.cs",
+              "RelativeDocumentMoniker": "TowerDefense.Server\\Services\\JwtTokenService.cs",
+              "ToolTip": "E:\\progect\\meta_server_tower_defense\\TowerDefense.Server\\Services\\JwtTokenService.cs",
+              "RelativeToolTip": "TowerDefense.Server\\Services\\JwtTokenService.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAQwDMAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-22T17:05:49.291Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "AuthorizationOptions.cs",
+              "DocumentMoniker": "E:\\progect\\meta_server_tower_defense\\TowerDefense.Server\\AuthorizationOptions.cs",
+              "RelativeDocumentMoniker": "TowerDefense.Server\\AuthorizationOptions.cs",
+              "ToolTip": "E:\\progect\\meta_server_tower_defense\\TowerDefense.Server\\AuthorizationOptions.cs",
+              "RelativeToolTip": "TowerDefense.Server\\AuthorizationOptions.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-23T07:34:41.37Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "AuthService.cs",
+              "DocumentMoniker": "E:\\progect\\meta_server_tower_defense\\TowerDefense.Server\\Services\\AuthService.cs",
+              "RelativeDocumentMoniker": "TowerDefense.Server\\Services\\AuthService.cs",
+              "ToolTip": "E:\\progect\\meta_server_tower_defense\\TowerDefense.Server\\Services\\AuthService.cs",
+              "RelativeToolTip": "TowerDefense.Server\\Services\\AuthService.cs",
+              "ViewState": "AgIAAEAAAAAAAAAAAAAhwIQAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-21T12:35:34.457Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "20260122200611_AddTable.cs",
+              "DocumentMoniker": "E:\\progect\\meta_server_tower_defense\\TowerDefense.Server\\Migrations\\20260122200611_AddTable.cs",
+              "RelativeDocumentMoniker": "TowerDefense.Server\\Migrations\\20260122200611_AddTable.cs",
+              "ToolTip": "E:\\progect\\meta_server_tower_defense\\TowerDefense.Server\\Migrations\\20260122200611_AddTable.cs",
+              "RelativeToolTip": "TowerDefense.Server\\Migrations\\20260122200611_AddTable.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-22T20:06:11.527Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "RolePermission.cs",
+              "DocumentMoniker": "E:\\progect\\meta_server_tower_defense\\TowerDefense.Common\\Models\\Access\\RolePermission.cs",
+              "RelativeDocumentMoniker": "TowerDefense.Common\\Models\\Access\\RolePermission.cs",
+              "ToolTip": "E:\\progect\\meta_server_tower_defense\\TowerDefense.Common\\Models\\Access\\RolePermission.cs",
+              "RelativeToolTip": "TowerDefense.Common\\Models\\Access\\RolePermission.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-22T19:05:16.481Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "PlayerStatistic.cs",
+              "DocumentMoniker": "E:\\progect\\meta_server_tower_defense\\TowerDefense.Common\\Models\\Player\\PlayerStatistic.cs",
+              "RelativeDocumentMoniker": "TowerDefense.Common\\Models\\Player\\PlayerStatistic.cs",
+              "ToolTip": "E:\\progect\\meta_server_tower_defense\\TowerDefense.Common\\Models\\Player\\PlayerStatistic.cs",
+              "RelativeToolTip": "TowerDefense.Common\\Models\\Player\\PlayerStatistic.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-22T18:11:50.322Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "PlayerProfile.cs",
+              "DocumentMoniker": "E:\\progect\\meta_server_tower_defense\\TowerDefense.Common\\Models\\Player\\PlayerProfile.cs",
+              "RelativeDocumentMoniker": "TowerDefense.Common\\Models\\Player\\PlayerProfile.cs",
+              "ToolTip": "E:\\progect\\meta_server_tower_defense\\TowerDefense.Common\\Models\\Player\\PlayerProfile.cs",
+              "RelativeToolTip": "TowerDefense.Common\\Models\\Player\\PlayerProfile.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-22T18:11:11.963Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "20260122160721_AddTable.cs",
+              "DocumentMoniker": "E:\\progect\\TowerDefenseGame\\TowerDefense.Server\\TowerDefense.Server\\Migrations\\20260122160721_AddTable.cs",
+              "RelativeDocumentMoniker": "..\\TowerDefenseGame\\TowerDefense.Server\\TowerDefense.Server\\Migrations\\20260122160721_AddTable.cs",
+              "ToolTip": "E:\\progect\\TowerDefenseGame\\TowerDefense.Server\\TowerDefense.Server\\Migrations\\20260122160721_AddTable.cs",
+              "RelativeToolTip": "..\\TowerDefenseGame\\TowerDefense.Server\\TowerDefense.Server\\Migrations\\20260122160721_AddTable.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-22T16:07:21.286Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "20260122150108_addTableDb.cs",
+              "DocumentMoniker": "E:\\progect\\TowerDefenseGame\\TowerDefense.Server\\TowerDefense.Server\\Migrations\\20260122150108_addTableDb.cs",
+              "RelativeDocumentMoniker": "..\\TowerDefenseGame\\TowerDefense.Server\\TowerDefense.Server\\Migrations\\20260122150108_addTableDb.cs",
+              "ToolTip": "E:\\progect\\TowerDefenseGame\\TowerDefense.Server\\TowerDefense.Server\\Migrations\\20260122150108_addTableDb.cs",
+              "RelativeToolTip": "..\\TowerDefenseGame\\TowerDefense.Server\\TowerDefense.Server\\Migrations\\20260122150108_addTableDb.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-22T15:01:08.198Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
               "Title": "Dockerfile",
               "DocumentMoniker": "E:\\progect\\meta_server_tower_defense\\Dockerfile",
               "RelativeDocumentMoniker": "Dockerfile",
               "ToolTip": "E:\\progect\\meta_server_tower_defense\\Dockerfile",
               "RelativeToolTip": "Dockerfile",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2026-01-21T16:21:29.517Z"
+              "WhenOpened": "2026-01-19T16:28:37.025Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "docker-compose.yml",
+              "DocumentMoniker": "E:\\progect\\meta_server_tower_defense\\docker-compose.yml",
+              "RelativeDocumentMoniker": "docker-compose.yml",
+              "ToolTip": "E:\\progect\\meta_server_tower_defense\\docker-compose.yml",
+              "RelativeToolTip": "docker-compose.yml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003775|",
+              "WhenOpened": "2026-01-21T11:42:56.523Z"
             }
           ]
         }

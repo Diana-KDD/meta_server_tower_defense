@@ -20,13 +20,13 @@ namespace TowerDefense.Server.Controllers
             _logger = logger;
         }
         [HttpPatch("save_result")]
-        public async Task<IActionResult> SaveResultMath(ResultMatchInfo request)
+        public async Task<IActionResult> SaveResultMath([FromBody] ResultMatchInfo request)
         {
             if (!ModelState.IsValid)
             {
                 return BadRequest(new
                 {
-                    succes = false,
+                    Success = false,
                     error = ModelState.Values
                             .SelectMany(x => x.Errors)
                             .Select(x => x.ErrorMessage)
@@ -72,11 +72,13 @@ namespace TowerDefense.Server.Controllers
                 _logger.LogInformation($"the results of the match between {request.IdPlayer_1} and {request.IdPlayer_2} were saved");
                 return Ok(new
                 {
+                    Success = true,
                     Message = "Результаты успешно сохранены"
                 });
             }
             return BadRequest(new
             {
+                Success = false,
                 Message = "Ошибка получения статистик игроков"
             });
 

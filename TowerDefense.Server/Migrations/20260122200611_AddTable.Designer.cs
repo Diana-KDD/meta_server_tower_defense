@@ -12,8 +12,8 @@ using TowerDefense.Server.Data;
 namespace TowerDefense.Server.Migrations
 {
     [DbContext(typeof(GameDBContext))]
-    [Migration("20260121193311_AddTables")]
-    partial class AddTables
+    [Migration("20260122200611_AddTable")]
+    partial class AddTable
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

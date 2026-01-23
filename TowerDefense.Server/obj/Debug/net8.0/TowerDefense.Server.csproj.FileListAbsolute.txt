@@ -307,9 +307,9 @@ E:\progect\TowerDefenseGame\TowerDefense.Server\TowerDefense.Server\obj\Debug\ne
 E:\progect\TowerDefenseGame\TowerDefense.Server\TowerDefense.Server\obj\Debug\net8.0\ref\TowerDefense.Server.dll
 E:\progect\TowerDefenseGame\TowerDefense.Server\TowerDefense.Server\bin\Debug\net8.0\DotNetEnv.dll
 E:\progect\TowerDefenseGame\TowerDefense.Server\TowerDefense.Server\bin\Debug\net8.0\Sprache.dll
+E:\progect\meta_server_tower_defense\TowerDefense.Server\bin\Debug\net8.0\appsettings.Development.json
 E:\progect\meta_server_tower_defense\TowerDefense.Server\bin\Debug\net8.0\appsettings.json
 E:\progect\meta_server_tower_defense\TowerDefense.Server\bin\Debug\net8.0\TowerDefense.Server.staticwebassets.endpoints.json
-E:\progect\meta_server_tower_defense\TowerDefense.Server\bin\Debug\net8.0\appsettings.Development.json
 E:\progect\meta_server_tower_defense\TowerDefense.Server\bin\Debug\net8.0\TowerDefense.Server.staticwebassets.runtime.json
 E:\progect\meta_server_tower_defense\TowerDefense.Server\bin\Debug\net8.0\TowerDefense.Server.exe
 E:\progect\meta_server_tower_defense\TowerDefense.Server\bin\Debug\net8.0\TowerDefense.Server.deps.json

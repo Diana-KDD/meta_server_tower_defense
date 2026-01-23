@@ -1,6 +1,11 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using System.ComponentModel.DataAnnotations;
+using System.Linq;
+using System.Numerics;
+using System.Reflection.Emit;
 using System.Security.Claims;
+using System.Security.Permissions;
+using TowerDefense.Common.Models.Access;
 using TowerDefense.Common.Models.DTO;
 using TowerDefense.Common.Models.Player;
 using TowerDefense.Server.Data;
@@ -91,16 +96,28 @@ namespace TowerDefense.Server.Services
                 await _context.Players.AddAsync(player);
                 await _context.SaveChangesAsync();
 
-                await _context.PlayerProfiles.AddAsync(new PlayerProfile { IdPlayer = player.Id});
-                await _context.PlayerStatistics.AddAsync(new PlayerStatistic { IdPlayer = player.Id });
-                await _context.PlayerRoles.AddAsync(new PlayerRole
+                PlayerProfile playerProfile = new()
+                {
+                    IdPlayer = player.Id
+                };
+                PlayerStatistic playerStatistic = new()
+                {
+                    IdPlayer = player.Id
+                };
+                PlayerRole playerRole = new()
                 {
                     PlayerId = player.Id,
-                    RoleId = _context.Roles.FirstOrDefault(r => r.RoleName == "Player").Id
-                });
+                    RoleId = _context.Roles.FirstOrDefault(r => r.RoleName == "Player")!.Id
+                };
+
+                await _context.PlayerProfiles.AddAsync(playerProfile);
+                await _context.PlayerStatistics.AddAsync(playerStatistic);
+                await _context.PlayerRoles.AddAsync(playerRole);
                 await _context.SaveChangesAsync();
 
-                var token = _jwtTokenService.GenerateJwtToken(player);
+                PlayerInfoClaim playerInfoClaim = await MapToPlayerInfoClaim(player, playerProfile, playerStatistic);
+
+                var token = _jwtTokenService.GenerateJwtToken(playerInfoClaim);
 
                 _logger.LogInformation("New player registered: {Username} (ID: {Id})", player.Username, player.Id);
 
@@ -190,7 +207,12 @@ namespace TowerDefense.Server.Services
                 player.LoginCount++;
                 player.UpdatedAt = DateTime.UtcNow;
 
-                var token = _jwtTokenService.GenerateJwtToken(player);
+                PlayerProfile playerProfile = await _context.PlayerProfiles.FindAsync(player.Id);
+                PlayerStatistic playerStatistic = await _context.PlayerStatistics.FindAsync(player.Id);
+
+                PlayerInfoClaim playerInfoClaim = await MapToPlayerInfoClaim(player, playerProfile, playerStatistic);
+
+                var token = _jwtTokenService.GenerateJwtToken(playerInfoClaim);
                 var refreshToken = _jwtTokenService.GenerateRefreshToken();
 
                 player.RefreshToken = refreshToken;
@@ -279,7 +301,11 @@ namespace TowerDefense.Server.Services
                     };
                 }
 
-                var newToken = _jwtTokenService.GenerateJwtToken(player);
+                PlayerProfile playerProfile = await _context.PlayerProfiles.FindAsync(player.Id);
+                PlayerStatistic playerStatistic = await _context.PlayerStatistics.FindAsync(player.Id);
+                PlayerInfoClaim playerInfoClaim = await MapToPlayerInfoClaim(player, playerProfile, playerStatistic);
+
+                var newToken = _jwtTokenService.GenerateJwtToken(playerInfoClaim);
                 var newRefreshToken = _jwtTokenService.GenerateRefreshToken();
 
                 player.RefreshToken = newRefreshToken;
@@ -320,6 +346,44 @@ namespace TowerDefense.Server.Services
                 Email = player.Email,
                 CreatedAt = player.CreatedAt,
                 LastLogin = player.LastLogin
+            };
+        }
+
+        private async Task<PlayerInfoClaim> MapToPlayerInfoClaim(Player player, 
+            PlayerProfile playerProfile, PlayerStatistic playerStatistic)
+        {
+            List<string> rolesName = await _context.PlayerRoles
+                                             .Where(pr => pr.PlayerId == player.Id)
+                                             .Join(_context.Roles,
+                                             pr => pr.RoleId,
+                                             r => r.Id,
+                                             (pr, r) => r.RoleName)
+                                             .ToListAsync();
+            List<string> permissionsName = await _context.PlayerRoles
+                                         .Where(pr => pr.PlayerId == player.Id)
+                                         .Join(_context.RolePermissions,
+                                                 pr => pr.RoleId,
+                                                 rp => rp.RoleId,
+                                                 (pr, rp) => rp.PermissionId)
+                                         .Join(_context.Permissions,
+                                               perId => perId,
+                                               p => p.Id,
+                                               (perId, p) => p.PermissionName)
+                                         .Distinct()
+                                         .ToListAsync();
+
+            return new PlayerInfoClaim
+            {
+                Id = player.Id,
+                Username = player.Username,
+                Email = player.Email,
+                Level = playerProfile.Level,
+                Experience = playerProfile.Experience,
+                TotalMatches = playerStatistic.TotalMatches,
+                Wins = playerStatistic.Wins,
+                Rating = playerStatistic.Rating,
+                Roles = rolesName,
+                Permissions = permissionsName
             };
         }
 
@@ -368,4 +432,5 @@ namespace TowerDefense.Server.Services
             return Validator.TryValidateObject(model, context, result, true);
         }
     }
+
 }

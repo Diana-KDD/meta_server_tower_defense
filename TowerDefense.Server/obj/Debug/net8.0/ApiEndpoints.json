@@ -1,7 +1,7 @@
 [
   {
     "ContainingType": "Program\u002B\u003C\u003Ec",
-    "Method": "\u003C\u003CMain\u003E$\u003Eb__0_5",
+    "Method": "\u003C\u003CMain\u003E$\u003Eb__0_6",
     "RelativePath": "",
     "HttpMethod": "GET",
     "IsController": false,
@@ -82,6 +82,32 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "TowerDefense.Server.Controllers.InventoryController",
+    "Method": "GetInventory",
+    "RelativePath": "api/Inventory",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TowerDefense.Server.Controllers.InventoryController",
+    "Method": "AddTowerInInventory",
+    "RelativePath": "api/Inventory/Add",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "TowerDefense.Common.Models.DTO.TowerAddInInventory",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "TowerDefense.Server.Controllers.LeaderboardController",
     "Method": "GetLeaderboard",
     "RelativePath": "api/Leaderboard",
@@ -111,6 +137,32 @@
     "ContainingType": "TowerDefense.Server.Controllers.ProfileController",
     "Method": "GetProfile",
     "RelativePath": "api/Profile",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TowerDefense.Server.Controllers.TowerController",
+    "Method": "AddTower",
+    "RelativePath": "api/Tower/Add",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "TowerDefense.Common.Models.DTO.TowerInfo",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TowerDefense.Server.Controllers.TowerController",
+    "Method": "GetTowers",
+    "RelativePath": "api/Tower/Get",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
