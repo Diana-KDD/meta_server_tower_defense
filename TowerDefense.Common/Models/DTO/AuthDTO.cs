@@ -8,10 +8,9 @@ namespace TowerDefense.Common.Models.DTO
         [StringLength(50)]
         public string Username { get; set; }
 
-        [Required]
-        [EmailAddress]
+        [RegularExpression(@"^$|^.+@.+\..+$", ErrorMessage = "The Email field is not a valid e-mail address.")]
         [StringLength(100)]
-        public string Email { get; set; }
+        public string? Email { get; set; }
 
         [Required]
         [StringLength(100)]
@@ -76,6 +75,21 @@ namespace TowerDefense.Common.Models.DTO
     {
         public string Token { get; set; }
         public string RefreshToken { get; set; }
+    }
+
+    public class ProfileResponse
+    {
+        public string UserName {  get; set; }
+        public string Email { get; set; }
+        public string AvatarUrl { get; set; }
+        public List<string> Role { get; set; } = new List<string>();
+        public DateTime LastLogin { get; set; }
+        public int Level { get; set; }
+        public int Experience { get; set; }
+        public int TotalMatches { get; set; }
+        public int Wins { get; set; }
+        public int Losses { get; set; }
+        public int Rating { get; set; }
     }
 
     public class ResultMatchInfo

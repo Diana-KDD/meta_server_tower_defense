@@ -1,6 +1,8 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using System.Security.Claims;
+using TowerDefense.Common.Models.DTO;
 using TowerDefense.Server.Data;
 
 namespace TowerDefense.Server.Controllers
@@ -29,22 +31,37 @@ namespace TowerDefense.Server.Controllers
 
             var player = await _context.Players.FindAsync(userId);
             var profilePlayer = await _context.PlayerProfiles.FindAsync(userId);
+            var playerStatistic = await _context.PlayerStatistics.FindAsync(userId);
 
-            if(player == null|| profilePlayer == null)
+            if(player == null|| profilePlayer == null || playerStatistic == null)
             {
                 return NotFound($"Пользователь не найден {userId}");
             }
 
-            _logger.LogInformation($"User: {userId} get profile");
-
-            return Ok(new
+            ProfileResponse profileResponse = new ProfileResponse()
             {
                 UserName = player.Username,
-                AvatarUrl = profilePlayer.AvatarUrl,
                 Email = player.Email,
+                AvatarUrl = profilePlayer.AvatarUrl,
+                Role = await _context.PlayerRoles
+                            .Where(pr => pr.PlayerId == player.Id)
+                            .Join(_context.Roles,
+                            pr => pr.RoleId,
+                            r => r.Id,
+                            (pr, r) => r.RoleName)
+                            .ToListAsync(),
+                LastLogin = player.LastLogin,
                 Level = profilePlayer.Level,
                 Experience = profilePlayer.Experience,
-            });
+                TotalMatches = playerStatistic.TotalMatches,
+                Wins = playerStatistic.Wins,
+                Losses = playerStatistic.Losses,
+                Rating = playerStatistic.Rating
+            };
+
+        _logger.LogInformation($"User: {userId} get profile");
+
+            return Ok(profileResponse);
         }
     }
 }
