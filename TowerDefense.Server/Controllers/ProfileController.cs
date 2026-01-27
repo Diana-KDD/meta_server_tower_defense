@@ -40,6 +40,7 @@ namespace TowerDefense.Server.Controllers
 
             ProfileResponse profileResponse = new ProfileResponse()
             {
+                Id = player.Id,
                 UserName = player.Username,
                 Email = player.Email,
                 AvatarUrl = profilePlayer.AvatarUrl,
