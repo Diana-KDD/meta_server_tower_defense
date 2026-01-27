@@ -56,6 +56,15 @@ namespace TowerDefense.Server.Controllers
                 });
             }
 
+            if(string.IsNullOrEmpty(request.Username) && string.IsNullOrEmpty(request.Email))
+            {
+                return BadRequest(new
+                {
+                    Success = false,
+                    Message = "Введите имя или почту"
+                });
+            }
+
             var result = await _authService.LoginAsync(request);
             if(result.Success)
             {
